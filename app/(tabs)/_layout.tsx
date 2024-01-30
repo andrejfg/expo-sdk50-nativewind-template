@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
 import { Pressable } from 'react-native';
-
-import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { unstable_styled } from 'nativewind';
+
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
   color: string;
 }) {
-  return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
+  return <FontAwesome className='-mb-1' size={28} {...props} />;
 }
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+
 
   return (
     <Tabs
@@ -38,8 +40,7 @@ export default function TabLayout() {
                   <FontAwesome
                     name="info-circle"
                     size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
+                    className= {'mr-4 text-light-text dark:text-dark-text' + pressed ? "opacity-50": "opacity-100"}
                   />
                 )}
               </Pressable>
