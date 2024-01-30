@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
-  presets: [require("nativewind/preset")],
+  content: ['./app/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+  presets: [require('nativewind/preset')],
   theme: {
     extend: {
-      colors:{
+      colors: {
         light: {
           text: '#000',
           background: '#fff',
@@ -20,11 +20,10 @@ module.exports = {
           tabIconSelected: '#fff',
         },
       },
-      textColor:{
-        link: '#2e78b7'
-      }
+      textColor: {
+        link: '#2e78b7',
+      },
     },
   },
   plugins: [],
 }
-
