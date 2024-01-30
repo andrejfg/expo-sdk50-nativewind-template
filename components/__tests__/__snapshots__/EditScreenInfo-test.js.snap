@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View>
+  <View
+    onLayout={[Function]}
+    style={[]}
+  >
+    <Text
+      onLayout={[Function]}
+      style={[]}
+    >
+      Open up the code for this screen:
+    </Text>
+    <View
+      onLayout={[Function]}
+      style={[]}
+    >
+      <Text
+        style={
+          [
+            undefined,
+            {
+              "fontFamily": "SpaceMono",
+            },
+          ]
+        }
+      >
+        app/modal.tsx
+      </Text>
+    </View>
+    <Text
+      onLayout={[Function]}
+      style={[]}
+    >
+      Change any of the text, save the file, and your app will automatically update.
+    </Text>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={[]}
+  >
+    <Text
+      href="https://docs.expo.io/get-started/create-a-new-app/#opening-the-app-on-your-phonetablet"
+      onLayout={[Function]}
+      onPress={[Function]}
+      role="link"
+      style={[]}
+    >
+      <Text
+        onLayout={[Function]}
+        style={[]}
+      >
+        Tap here if your app doesn't automatically update after making changes
+      </Text>
+    </Text>
+  </View>
+</View>
+`;

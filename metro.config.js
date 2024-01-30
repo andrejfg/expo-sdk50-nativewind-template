@@ -1,6 +1,8 @@
-import { getDefaultConfig } from 'expo/metro-config'
-import { withNativeWind } from 'nativewind/metro'
+/* eslint-disable @typescript-eslint/no-var-requires */
+
+const { getDefaultConfig } = require('expo/metro-config')
+const { withNativeWind } = require('nativewind/metro')
 
 const config = getDefaultConfig(__dirname)
 
-export default withNativeWind(config, { input: './app/global.css' })
+module.exports = withNativeWind(config, { input: './app/global.css' })
